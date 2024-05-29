@@ -1,0 +1,815 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body{
+height: 100%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-title{
+    margin-bottom: 80px;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.header{
+    background-color: #151515;
+}
+
+.header-main{
+    background-color: transparent;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+}
+
+.header__inner{
+    padding-top: 40px;
+    padding-bottom: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.menu__list{
+    display: flex;
+    gap: 35px;
+}
+
+.menu__list-link{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.footer{
+    background-color: #151515;
+    padding: 20px 0 20px;
+    color: #fff;
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__menu-list{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer__menu-title{
+    font-size: 16px;
+    font-weight: 400
+}
+
+.footer__menu-item + .footer__menu-item{
+    padding-top: 9px;
+}
+
+.main{
+    flex-grow: 1;
+}
+
+.top{
+    color: #fff;
+    text-align: center;
+    padding-top: 250px;
+    padding-bottom: 50px;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+}
+
+.title{
+    padding-bottom: 40px;
+    font-size: 96px;
+    font-weight: 700;
+}
+
+.top__link{
+    background-color: #BF113B;
+    border-radius: 5px;
+    padding: 23px;
+    max-width: 430px;
+    width: 100%;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.swiper-slide{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.swiper-pagination-bullet{
+width: 120px;
+height: 3px;
+background-color: #151515;
+border-radius: 0;
+opacity: 1;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0 15px;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+bottom: 50px;
+}
+
+.swiper-pagination-bullet-active{
+height: 6px;
+background-color: #fff;
+}
+
+.advantage{
+    padding: 130px 0;
+}
+
+.advantage__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 250px;
+    text-align: center;
+}
+
+.advantage__item-img{
+    margin-bottom: 11px;
+}
+
+.advantage__item-title{
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.new-flowers__list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 41px;
+    text-align: center
+}
+
+.new-flowers__item-img{
+    margin-bottom: 30px;
+}
+
+.new-flowers__item-title{
+    margin-bottom: 14px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.new-flowers__item-text{
+    margin-bottom: 60px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.new-flowers__link-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.new-flowers__link{
+    background-color: #BF113B;
+    border-radius: 5px;
+    padding: 16px;
+    max-width: 269px;
+    width: 100%;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+.cases{
+    padding: 130px 0;
+}
+
+.cases__list{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 41px;
+    margin-bottom: 60px;
+}
+
+.cases__link-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.cases__link{
+    background-color: #BF113B;
+    border-radius: 5px;
+    padding: 16px;
+    max-width: 269px;
+    width: 100%;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+.contacts{
+    padding: 100px 0 130px;
+}
+
+.contacts-title{
+    margin-bottom: 20px;
+}
+
+.contacts__text{
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 39px;
+    padding: 0 200px;
+}
+
+.form{
+    max-width: 580px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form__input{
+    width: 270px;
+    padding: 18px 20px;
+    display: inline-block;
+    border: 1px solid #BF113B;
+    margin-bottom: 50px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+
+.form__input::placeholder, 
+.form__textarea::placeholder{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    opacity: 0.5;
+}
+
+.form__textarea{
+    width: 100%;
+    resize: none;
+    padding: 18px 20px;
+    height: 290px;
+    border: 1px solid #BF113B;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 50px;
+}
+
+.form__btn{
+    color: #fff;
+    background-color: #BF113B;
+    border-radius: 5px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 12px 37px;
+    margin: 0 auto;
+    border: 0;
+    margin-bottom: 100px;
+}
+
+.section-text{
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+    padding: 0 150px;
+}
+
+.uslovia-zakaza{
+    padding: 100px;
+}
+
+.section-t{
+    padding-bottom: 60px;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center
+}
+
+.zakaz__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 85px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.zakaz__item-img{
+    margin-bottom: 21px;
+}
+
+.zakaz__text-1,
+.zakaz__text-2{
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    line-height: 1.5;
+    padding-right: 100px;
+}
+
+.zakaz__text-3{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.uslovia-dostavki{
+    padding: 100px;
+}
+
+.dostavka__text{
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 1.4
+}
+
+.buketi{
+    padding: 80px;
+}
+
+.buketi__list{
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    gap: 41px;
+    text-align: center
+}
+
+.buketi__item-img{
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.buketi__item-title{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.buketi__item-text{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.section__button{
+    background-color: #BF113B;
+    border-radius: 5px;
+    border: 0;
+    padding: 16px;
+    max-width: 269px;
+    width: 100%;
+    display: inline-block;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.modal{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, .5);
+    cursor: pointer;
+    padding: 30px;
+    overflow-y: auto;
+    display: none;
+}
+
+.modal__main{
+    position: relative;
+    max-width: 450px;
+    background-color: #fff;
+    margin: auto;
+    color: #302D2D;
+    border-radius: 10px;
+    cursor: default;
+}
+
+.modal__header{
+    border-bottom: 1px solid #f0f0f0; 
+}
+
+.modal__header-l{
+    padding-left: 32px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.modal__close{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.modal__container{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.verh{
+    display: flex;
+    gap: 15px;
+    max-width: 385px;
+    margin-bottom: 15px;
+}
+
+.modal__texts{
+    margin-top: 3px;
+}
+
+.modal__title{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 6px;
+    line-height: 1.5;
+    opacity: 0.6;
+}
+
+.modal__text{
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: -1px;
+}
+
+.modal__form{
+    max-width: 385px;
+    margin: 0 auto;
+    display: grid;
+    gap: 17px;
+}
+
+.form__input-modal{
+    width: 450x;
+    padding: 20px 25px;
+    display: inline-block;
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+
+.form__input-modal::placeholder{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #B9B9B9;
+}
+
+.form__btn-modal{
+    color: #fff;
+    background-color: #BF113B;
+    border-radius: 5px;
+    font-family: "Inter", sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    padding: 17px;
+    border: 0;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.personal{
+    text-align: center;
+    font-weight: 300;
+    font-size: 11px;
+    color: #747474;
+    opacity: 0.6;
+    margin-bottom: 15px;
+}
+
+.menu__btn{
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+.menu__btn span{
+    height: 2px;
+    background-color: #fff;
+    width: 100%;
+}
+
+@media (max-width: 1224px){
+    .advantage__list{
+        gap: 150px;
+    }
+    .new-flowers__list{
+        gap: 10px;
+    }
+    .cases__list{
+        gap: 10px;
+    }
+    .buketi {
+        padding: 80px 0px;
+    }
+    .buketi__list {
+        gap: 30px;
+    }
+
+}
+
+@media (max-width: 1130px){
+    .new-flowers__list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0px 20px;
+        text-align: center;
+    }
+    .new-flowers__item-img {
+        width: 100%;
+    }
+    .cases__list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        text-align: center;
+    }
+    .cases__item-img{
+        width: 100%;
+    }
+    .contacts__text {
+        padding: 0;
+    }
+    .section-text__tg {
+        padding: 0;
+    }
+}
+
+@media (max-width: 964px){
+    .buketi__list{
+        grid-template-columns: repeat(3, 4fr);
+    }
+    .uslovia-zakaza {
+        padding: 80px 0px;
+    }
+    .zakaz__list {
+        gap: 40px;
+    }
+
+}
+
+@media (max-width: 924px){
+    .menu__btn{
+        display: flex;
+    }
+    .menu__btn,
+    .logo{
+        position: relative;
+        z-index: 10;
+    }
+    .menu__list{
+        position: absolute;
+        z-index: 5;
+        background-color: #151515;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding-top: 200px;
+        height: 100vh;
+        transform: translateY(-100%);
+        transition: transform .3s ease;
+    }
+    .menu__list.menu__list--active{
+        transform: translateY(0%);
+    }
+    .title {
+        font-size: 80px;
+    }
+    .top__link {
+        padding: 20px;
+        max-width: 350px;
+        font-size: 30px;
+    }
+    .swiper-pagination-bullet {
+        width: 100px;
+    }
+    .swiper-pagination-bullet-active {
+        height: 4px;
+    }
+    .new-flowers__list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px 15px;
+    }
+    .advantage__list {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 80px 20px;
+    }
+    .cases__list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .new-flowers__link {
+        padding: 20px;
+        max-width: 300px;
+        font-size: 21px;
+    }
+    .cases__link {
+        padding: 20px;
+        max-width: 300px;
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 870px){
+    .zakaz__text-1, .zakaz__text-2, .zakaz__text-3 {
+        font-size: 30px;
+    }
+    .uslovia-dostavki {
+        padding: 80px 0px;
+    }
+
+}
+
+@media (max-width: 720px){
+    .buketi {
+        padding: 60px 0px;
+    }
+    .buketi__list {
+        gap: 15px;
+    }
+    .dostavka__text {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 652px){
+    .buketi__list {
+        grid-template-columns: repeat(2, 4fr);
+    }
+    .section__button{
+        max-width: 290px;
+    }
+    .zakaz__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contacts {
+        padding: 80px 0 100px;
+    }
+    .form__input{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 587px){
+    .swiper-pagination-bullet {
+        width: 60px;
+        height: 2px;
+    }
+    .swiper-pagination-bullet-active {
+        height: 2px;
+    }
+    .section-title {
+        font-size: 40px;
+    }
+    .advantage__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .advantage__item-img {
+        margin-bottom: 20px;
+    }
+    .advantage__item-title {
+        font-size: 24px;
+    }
+    .new-flowers__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cases__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 547px){
+    .modal__title {
+        font-size: 12px;
+    }
+    .title {
+        font-size: 70px;
+    }
+    .new-flowers__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer__inner {
+        gap: 20px;
+    }
+    .cases {
+        padding: 90px 0;
+    }
+    .zakaz__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .zakaz__text-1, .zakaz__text-2, .zakaz__text-3 {
+        font-size: 25px;
+    }
+    .dostavka__text {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 450px){
+    .modal__text {
+        font-size: 20px;
+    }
+    .personal {
+        font-size: 10px;
+    }
+    .zakaz__text-1, .zakaz__text-2, .zakaz__text-3 {
+        font-size: 20px;
+    }
+    .contacts {
+        padding: 60px 0 80px;
+    }
+    .contacts__text {
+        font-size: 20px;
+    }
+    .section-text__tg {
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 404px){
+    .modal__title {
+        font-size: 10px;
+    }
+    .modal__text {
+        font-size: 16px;
+    }
+    .form__btn-modal {
+        font-size: 17px;
+    }
+}
